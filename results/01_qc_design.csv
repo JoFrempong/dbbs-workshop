@@ -1,0 +1,35 @@
+body_site,subject,days_since_experiment_start,reported_antibiotic_usage,n_samples
+gut,subject-1,0,Yes,1
+gut,subject-1,84,No,1
+gut,subject-1,112,No,1
+gut,subject-1,140,No,1
+gut,subject-2,0,Yes,1
+gut,subject-2,84,No,1
+gut,subject-2,140,No,1
+gut,subject-2,168,No,1
+left palm,subject-1,84,No,1
+left palm,subject-1,112,No,1
+left palm,subject-1,140,No,1
+left palm,subject-1,168,No,1
+left palm,subject-2,0,Yes,1
+left palm,subject-2,84,No,1
+left palm,subject-2,140,No,1
+left palm,subject-2,168,No,1
+right palm,subject-1,0,Yes,1
+right palm,subject-1,84,No,1
+right palm,subject-1,112,No,1
+right palm,subject-1,140,No,1
+right palm,subject-1,168,No,1
+right palm,subject-2,0,Yes,1
+right palm,subject-2,84,No,1
+right palm,subject-2,140,No,1
+right palm,subject-2,168,No,1
+tongue,subject-1,0,Yes,1
+tongue,subject-1,84,No,1
+tongue,subject-1,112,No,1
+tongue,subject-1,140,No,1
+tongue,subject-1,168,No,1
+tongue,subject-2,0,Yes,1
+tongue,subject-2,84,No,1
+tongue,subject-2,140,No,1
+tongue,subject-2,168,No,1

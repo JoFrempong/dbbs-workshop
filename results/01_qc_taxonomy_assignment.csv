@@ -1,0 +1,8 @@
+rank,asvs_assigned,pct_asvs_assigned,pct_reads_assigned
+kingdom,739,99.9,100
+phylum,646,87.3,93.8
+class,587,79.3,92.1
+order,551,74.5,87.4
+family,435,58.8,81.6
+genus,221,29.9,63.5
+species,44,5.9,16.4

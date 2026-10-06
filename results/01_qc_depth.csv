@@ -1,0 +1,35 @@
+sample_id,id_prefix,body_site,subject,days_since_experiment_start,reported_antibiotic_usage,reads_total,reads_organelle,pct_organelle,reads_after_filter,asvs_observed_unrarefied,is_min_depth
+L1S8,L1,gut,subject-1,0,Yes,7033,0,0,7033,44,FALSE
+L1S57,L1,gut,subject-1,84,No,8702,0,0,8702,70,FALSE
+L1S76,L1,gut,subject-1,112,No,7867,0,0,7867,61,FALSE
+L1S105,L1,gut,subject-1,140,No,7780,0,0,7780,63,FALSE
+L1S140,L1,gut,subject-2,0,Yes,7163,0,0,7163,65,FALSE
+L1S208,L1,gut,subject-2,84,No,8152,0,0,8152,85,FALSE
+L1S257,L1,gut,subject-2,140,No,6388,0,0,6388,81,FALSE
+L1S281,L1,gut,subject-2,168,No,6615,0,0,6615,72,FALSE
+L2S155,L2,left palm,subject-1,84,No,3932,160,4.1,3772,103,FALSE
+L2S175,L2,left palm,subject-1,112,No,4386,8,0.2,4378,103,FALSE
+L2S204,L2,left palm,subject-1,140,No,3158,166,5.3,2992,84,FALSE
+L2S222,L2,left palm,subject-1,168,No,3187,220,6.9,2967,134,FALSE
+L2S240,L2,left palm,subject-2,0,Yes,5061,9,0.2,5052,44,FALSE
+L2S309,L2,left palm,subject-2,84,No,1419,60,4.2,1359,55,FALSE
+L2S357,L2,left palm,subject-2,140,No,2373,73,3.1,2300,49,FALSE
+L2S382,L2,left palm,subject-2,168,No,4089,7,0.2,4082,123,FALSE
+L3S242,L3,right palm,subject-1,0,Yes,897,0,0,897,20,FALSE
+L3S294,L3,right palm,subject-1,84,No,1225,100,8.2,1125,37,FALSE
+L3S313,L3,right palm,subject-1,112,No,1103,0,0,1103,46,FALSE
+L3S341,L3,right palm,subject-1,140,No,962,47,4.9,915,44,FALSE
+L3S360,L3,right palm,subject-1,168,No,969,139,14.3,830,52,TRUE
+L3S378,L3,right palm,subject-2,0,Yes,1249,0,0,1249,30,FALSE
+L4S63,L4,right palm,subject-2,84,No,9744,662,6.8,9082,216,FALSE
+L4S112,L4,right palm,subject-2,140,No,8340,258,3.1,8082,155,FALSE
+L4S137,L4,right palm,subject-2,168,No,9820,50,0.5,9770,140,FALSE
+L5S104,L5,tongue,subject-1,0,Yes,2227,316,14.2,1911,24,FALSE
+L5S155,L5,tongue,subject-1,84,No,1800,0,0,1800,21,FALSE
+L5S174,L5,tongue,subject-1,112,No,1953,0,0,1953,28,FALSE
+L5S203,L5,tongue,subject-1,140,No,2112,0,0,2112,29,FALSE
+L5S222,L5,tongue,subject-1,168,No,2521,8,0.3,2513,26,FALSE
+L5S240,L5,tongue,subject-2,0,Yes,1792,0,0,1792,23,FALSE
+L6S20,L6,tongue,subject-2,84,No,6855,0,0,6855,46,FALSE
+L6S68,L6,tongue,subject-2,140,No,5980,0,0,5980,43,FALSE
+L6S93,L6,tongue,subject-2,168,No,6953,0,0,6953,51,FALSE
