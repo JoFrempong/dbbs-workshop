@@ -25,6 +25,23 @@ All findings describe these two individuals. Each bullet names the script and ou
   | left palm | 3.41 | 3.07 |
 
   Palm samples ranged from 1.99 to 4.36. Source: `results/02_alpha_summary.csv`, `results/02_alpha_diversity.png`.
+- **Body sites differed in Shannon diversity within these two people.** The test permuted site labels within each person-day: F = 8.85, partial η² = 0.55, P ≤ 0.0001, the minimum attainable. A rank-based version of the same test agreed (P = 0.003), so the result is not driven by sites differing in spread. Results held for observed ASVs (P = 0.009) and without the 3 flagged palm samples (P ≤ 0.0001). Source: `results/02_alpha_tests.csv`.
+- **Tongue was less diverse than both palms, in both subjects.** These were the only site pairs to reach significance after BH adjustment.
+
+  | Comparison | Median within-visit difference (Shannon) | subject-1 | subject-2 | Adjusted P |
+  |---|---|---|---|---|
+  | tongue − left palm | −1.05 | −1.16 | −0.87 | 0.047 |
+  | tongue − right palm | −0.73 | −0.67 | −0.96 | 0.047 |
+  | tongue − gut | −0.27 | −0.12 | −0.59 | 0.062 |
+  | right palm − gut | +0.30 | +0.14 | +0.42 | 0.11 |
+  | left palm − gut | +0.21 | +0.57 | +0.01 | 0.11 |
+  | right palm − left palm | −0.21 | −0.43 | +0.19 | 0.71 |
+
+  - Each comparison is based on 7–9 person-days from 2 people.
+  - Every pairwise P is at or near the smallest value the design allows (0.004–0.016), so compare pairs by the size of the difference.
+  - **"No difference" between left and right palm hides opposite directions in the two subjects.** Subject-1's right palm samples are all shallow (L3 prefix), so this can't be separated from depth or sequencing run.
+
+  Source: `results/02_alpha_pairwise.csv`.
 - **Richness had not levelled off at 830 reads for the deeper palm and gut samples.** For example, 4–6% of further reads would still be new ASVs in subject-2's deep right palm samples. So observed ASVs underestimates richness at those sites, and Shannon is the more reliable measure. Source: `results/02_alpha_diversity.csv` (`slope_at_rarefy_depth`), `results/02_alpha_rarecurve.png`.
 - **Robust to rarefaction depth.** Rarefying to 1,100 reads (dropping 3 samples) changed site medians by 0.04 or less and did not change the site ordering. Source: `results/02_alpha_sensitivity.csv`.
 - **Subject differences at right palm and tongue can't be interpreted.** At those sites, rarefied diversity still tracked original depth (Spearman ρ = 0.33–0.93 within site), and depth is tied to subject and ID prefix there. Source: `results/02_alpha_depth_check.png`.

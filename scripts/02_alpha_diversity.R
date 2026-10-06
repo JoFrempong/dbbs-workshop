@@ -12,8 +12,29 @@
 #   which drops the 3 shallowest samples.
 # - Depth check: each metric against the sample's original depth.
 #
-# Alpha diversity is reported descriptively by body site and subject. No
-# hypothesis test is run: samples are repeated measures from only 2 people.
+# Alpha diversity is summarised by body site and subject. Body sites are
+# compared with a blocked permutation test: F statistic for body site in
+# lm(diversity ~ visit + body_site), where visit = subject x day, with site
+# labels shuffled only among samples from the same person on the same day
+# (9,999 permutations; same permutation scheme as the PERMANOVA in
+# 03_beta_diversity.R, but this model conditions on visit, not subject).
+# - The test is of the sharp null that site makes no difference to the
+#   values. Sites differ in spread (palms most variable, tongue least), so a
+#   small p does not mean the averages differ specifically. A rank-based
+#   check (values ranked within visit, same test) is less sensitive to
+#   spread. Effect size: partial eta-squared for site.
+# - Pairwise tests use the same scheme. With 2 sites, a visit with only one
+#   of them adds nothing to F, so only the k visits with both sites matter:
+#   2^k permutations exist, all enumerated, and the smallest possible p is
+#   2 / 2^k (swapping every visit gives the observed F). Pairs are compared
+#   by effect size: the median within-visit difference, pooled and per
+#   subject. BH adjustment within metric x sample set.
+# - Primary analysis: Shannon, all samples. Observed ASVs and the run
+#   without the 3 flagged day-0 palm samples (03_beta_diversity.R) are
+#   secondary / sensitivity.
+# - Subject-1's right palm samples are shallow (830-1,125 reads, prefix L3),
+#   so right palm comparisons involving subject-1 cannot be separated from
+#   depth or sequencing run. Results describe these 2 people only.
 # Day 0 coincides with reported antibiotic use, the first visit and (for
 # subject-2 right palm and tongue) lower depth and a different sample-ID
 # prefix, so differences at day 0 cannot be attributed to any one cause.
@@ -26,6 +47,7 @@ suppressPackageStartupMessages({
   library(tidyr)
   library(ggplot2)
   library(vegan)
+  library(permute)
 })
 pdf(NULL)  # rarecurve() draws to the default device; stop it writing Rplots.pdf
 
@@ -35,6 +57,8 @@ dir.create(out_dir, showWarnings = FALSE)
 
 n_rarefy <- 100
 sensitivity_depth <- 1100
+n_perm <- 9999
+flagged_palms <- c("L3S242", "L3S378", "L2S240")  # see 03_beta_diversity.R
 set.seed(42)
 
 subject_colours <- c("subject-1" = "#1b7e9e", "subject-2" = "#d1652a")
@@ -154,6 +178,86 @@ print(alpha |>
         summarise(n = n(), min = min(slope_at_rarefy_depth),
                   median = median(slope_at_rarefy_depth),
                   max = max(slope_at_rarefy_depth), .groups = "drop"))
+
+# ---- Blocked permutation tests between body sites ----
+site_anova <- function(value, site, visit) anova(lm(value ~ visit + site))
+site_F <- function(value, site, visit) site_anova(value, site, visit)["site", "F value"]
+
+# Returns observed F, permutation p-value and number of permutations used.
+# shuffleSet() excludes the observed order and enumerates all permutations
+# when there are fewer than n_perm, so p = (1 + #perm F >= observed) / (n + 1).
+perm_test <- function(value, site, visit) {
+  site <- droplevels(factor(site)); visit <- droplevels(factor(visit))
+  f_obs <- site_F(value, site, visit)
+  perms <- suppressMessages(shuffleSet(length(value), nset = n_perm,
+                                       control = how(blocks = visit)))
+  f_perm <- apply(perms, 1, function(idx) site_F(value, site[idx], visit))
+  list(F = f_obs, p = (1 + sum(f_perm >= f_obs * (1 - 1e-8))) / (nrow(perms) + 1),
+       n_perms = nrow(perms))
+}
+
+test_data <- alpha_long |>
+  left_join(meta |> mutate(visit = paste(subject, days_since_experiment_start)) |>
+              select(sample_id, visit), by = "sample_id")
+
+test_sets <- list("all samples" = test_data,
+                  "without 3 flagged palms" = filter(test_data, !sample_id %in% flagged_palms))
+sample_set_label <- function(x) if (x == "all samples") "all samples (primary for Shannon)" else x
+
+alpha_tests <- bind_rows(lapply(names(test_sets), function(set_name) {
+  bind_rows(lapply(levels(test_data$metric), function(m) {
+    d <- filter(test_sets[[set_name]], metric == m) |>
+      group_by(visit) |> mutate(rank_in_visit = rank(value)) |> ungroup()
+    tab <- site_anova(d$value, factor(d$body_site), factor(d$visit))
+    set.seed(42)
+    res <- perm_test(d$value, d$body_site, d$visit)
+    set.seed(42)
+    res_rank <- perm_test(d$rank_in_visit, d$body_site, d$visit)
+    tibble(sample_set = sample_set_label(set_name), metric = m, n_samples = nrow(d),
+           n_visits = n_distinct(d$visit), F = round(res$F, 2),
+           partial_eta_sq = round(tab["site", "Sum Sq"] /
+                                    (tab["site", "Sum Sq"] + tab["Residuals", "Sum Sq"]), 2),
+           p_value = res$p, p_value_ranks = res_rank$p,
+           n_permutations = res$n_perms,
+           note = paste0("p = ", round(1 / (n_perm + 1), 4), " is the minimum attainable"))
+  }))
+}))
+write_csv(alpha_tests, file.path(out_dir, "02_alpha_tests.csv"))
+cat("\nBody-site test (lm diversity ~ visit + site; permutations within visit):\n")
+print(alpha_tests, n = Inf)
+
+# Pairwise: same test on each pair of sites; effect = median within-visit
+# difference (site_2 minus site_1) among visits that sampled both sites,
+# pooled and per subject
+alpha_pairwise <- bind_rows(lapply(names(test_sets), function(set_name) {
+  bind_rows(lapply(levels(test_data$metric), function(m) {
+    d_all <- filter(test_sets[[set_name]], metric == m)
+    site_pairs <- combn(sort(unique(d_all$body_site)), 2, simplify = FALSE)
+    bind_rows(lapply(site_pairs, function(pr) {
+      d <- filter(d_all, body_site %in% pr)
+      set.seed(42)
+      res <- perm_test(d$value, d$body_site, d$visit)
+      diffs <- d |>
+        select(visit, subject, body_site, value) |>
+        pivot_wider(names_from = body_site, values_from = value) |>
+        filter(!is.na(.data[[pr[1]]]), !is.na(.data[[pr[2]]])) |>
+        mutate(diff = .data[[pr[2]]] - .data[[pr[1]]])
+      n_paired <- nrow(diffs)
+      tibble(sample_set = sample_set_label(set_name), metric = m,
+             site_1 = pr[1], site_2 = pr[2], n_paired_visits = n_paired,
+             median_diff_site2_minus_site1 = round(median(diffs$diff), 2),
+             median_diff_subject1 = round(median(diffs$diff[diffs$subject == "subject-1"]), 2),
+             median_diff_subject2 = round(median(diffs$diff[diffs$subject == "subject-2"]), 2),
+             F = round(res$F, 2), p_value = res$p,
+             min_possible_p = round(2 / 2^n_paired, 4))
+    })) |>
+      mutate(p_adj_BH = round(p.adjust(p_value, method = "BH"), 4),
+             p_value = round(p_value, 4))
+  }))
+}))
+write_csv(alpha_pairwise, file.path(out_dir, "02_alpha_pairwise.csv"))
+cat("\nPairwise site comparisons (permutations within visit; BH within metric and sample set):\n")
+print(alpha_pairwise |> filter(metric == "Shannon"), n = Inf, width = Inf)
 
 # ---- Sensitivity: higher rarefaction depth ----
 dropped <- names(depth)[depth < sensitivity_depth]

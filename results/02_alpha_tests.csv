@@ -1,0 +1,5 @@
+sample_set,metric,n_samples,n_visits,F,partial_eta_sq,p_value,p_value_ranks,n_permutations,note
+all samples (primary for Shannon),Shannon,34,9,8.85,0.55,1e-4,0.0027,9999,p = 1e-04 is the minimum attainable
+all samples (primary for Shannon),Observed ASVs,34,9,4.98,0.4,0.0094,2e-4,9999,p = 1e-04 is the minimum attainable
+without 3 flagged palms,Shannon,31,9,12.74,0.67,1e-4,5e-4,9999,p = 1e-04 is the minimum attainable
+without 3 flagged palms,Observed ASVs,31,9,6.09,0.49,0.0053,5e-4,9999,p = 1e-04 is the minimum attainable

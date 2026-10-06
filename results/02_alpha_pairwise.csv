@@ -1,0 +1,25 @@
+sample_set,metric,site_1,site_2,n_paired_visits,median_diff_site2_minus_site1,median_diff_subject1,median_diff_subject2,F,p_value,min_possible_p,p_adj_BH
+all samples (primary for Shannon),Shannon,gut,left palm,7,0.21,0.57,0.01,4.17,0.0938,0.0156,0.1125
+all samples (primary for Shannon),Shannon,gut,right palm,8,0.3,0.14,0.42,4.21,0.0938,0.0078,0.1125
+all samples (primary for Shannon),Shannon,gut,tongue,8,-0.27,-0.12,-0.59,6.92,0.0312,0.0078,0.0625
+all samples (primary for Shannon),Shannon,left palm,right palm,8,-0.21,-0.43,0.19,0.15,0.7109,0.0078,0.7109
+all samples (primary for Shannon),Shannon,left palm,tongue,8,-1.05,-1.16,-0.87,23.99,0.0078,0.0078,0.0469
+all samples (primary for Shannon),Shannon,right palm,tongue,9,-0.73,-0.67,-0.96,10.7,0.0156,0.0039,0.0469
+all samples (primary for Shannon),Observed ASVs,gut,left palm,7,24.9,29.1,-17.88,1.16,0.3125,0.0156,0.4688
+all samples (primary for Shannon),Observed ASVs,gut,right palm,8,-5.4,-12.58,44.02,0.62,0.4844,0.0078,0.5812
+all samples (primary for Shannon),Observed ASVs,gut,tongue,8,-27.54,-22.8,-32.54,85.48,0.0078,0.0078,0.0156
+all samples (primary for Shannon),Observed ASVs,left palm,right palm,8,-20.12,-46.43,30.27,0.1,0.75,0.0078,0.75
+all samples (primary for Shannon),Observed ASVs,left palm,tongue,8,-53.9,-63.64,-16.08,19.25,0.0078,0.0078,0.0156
+all samples (primary for Shannon),Observed ASVs,right palm,tongue,9,-18.52,-16.28,-70.03,8.64,0.0078,0.0039,0.0156
+without 3 flagged palms,Shannon,gut,left palm,6,0.39,0.57,0.04,4.81,0.0938,0.0312,0.1125
+without 3 flagged palms,Shannon,gut,right palm,6,0.42,0.28,0.52,10.7,0.0625,0.0312,0.0938
+without 3 flagged palms,Shannon,gut,tongue,8,-0.27,-0.12,-0.59,6.92,0.0312,0.0078,0.0625
+without 3 flagged palms,Shannon,left palm,right palm,7,-0.29,-0.43,0.51,0.09,0.7656,0.0156,0.7656
+without 3 flagged palms,Shannon,left palm,tongue,7,-1.06,-1.16,-1.05,28.65,0.0156,0.0156,0.0469
+without 3 flagged palms,Shannon,right palm,tongue,7,-0.77,-0.72,-1.19,24.64,0.0156,0.0156,0.0469
+without 3 flagged palms,Observed ASVs,gut,left palm,6,27,29.1,-16.91,2.16,0.1875,0.0312,0.2812
+without 3 flagged palms,Observed ASVs,gut,right palm,6,20.17,-7.41,44.32,1.9,0.25,0.0312,0.3
+without 3 flagged palms,Observed ASVs,gut,tongue,8,-27.54,-22.8,-32.54,85.48,0.0078,0.0078,0.0312
+without 3 flagged palms,Observed ASVs,left palm,right palm,7,-32.31,-46.43,63.9,0.07,0.7812,0.0156,0.7812
+without 3 flagged palms,Observed ASVs,left palm,tongue,7,-59.2,-63.64,-16.78,21.25,0.0156,0.0156,0.0312
+without 3 flagged palms,Observed ASVs,right palm,tongue,7,-26.72,-17.4,-75.7,11.26,0.0156,0.0156,0.0312
