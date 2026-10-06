@@ -7,7 +7,7 @@ We analysed the subset of the Moving Pictures of the Human Microbiome study (Cap
 - **Denoising:** DADA2 (`dada2 denoise_single`) produced 770 amplicon sequence variants (ASVs). Settings: reads truncated at 120 bases, no left trimming, maximum expected errors 2.0, truncation quality 2, independent sample pooling, consensus chimera removal (minimum fold parent over abundance 1.0), and up to 10⁶ reads used to learn error rates. ASVs are identified by MD5 hashes of their sequences.
 - **Taxonomy:** each ASV was assigned with a naive Bayes classifier (`feature-classifier classify_sklearn`, scikit-learn 1.7.1; confidence threshold 0.7). The classifier had been trained (`fit_classifier_naive_bayes`; 7-mer features, α = 0.001) on full-length Greengenes 13_8 sequences clustered at 85% identity (`85_otus.fasta`, `85_otu_taxonomy.txt`). The reference was not trimmed to the amplified region.
 
-The 16S rRNA gene region, primers and sequencing platform are not recorded in the provided files [TODO: confirm from Caporaso et al., 2011]. We used the tab-separated count, taxonomy and sample-metadata tables derived from these artifacts. The count table was checked against `table.qza` itself, as described under Data processing.
+Sample collection, DNA extraction, amplification of the 16S rRNA gene and sequencing were performed as described in the original study (Caporaso et al., 2011). We used the tab-separated count, taxonomy and sample-metadata tables derived from these artifacts. The count table was checked against `table.qza` itself, as described under Data processing.
 
 ## Data processing
 
