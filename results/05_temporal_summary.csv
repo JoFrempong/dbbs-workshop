@@ -1,0 +1,57 @@
+pair_set,site,comparison,subject,n_pairs,median,min,max
+all pairs,gut,"Same person, same site, different visit",pooled,12,0.336,0.245,0.458
+all pairs,gut,"Same person, same site, different visit",subject-1,6,0.345,0.245,0.458
+all pairs,gut,"Same person, same site, different visit",subject-2,6,0.336,0.293,0.452
+all pairs,gut,"Same site, other person, same day",both,3,0.688,0.685,0.75
+all pairs,gut,"Same person, other site, same day",pooled,23,0.995,0.157,1
+all pairs,gut,"Same person, other site, same day",subject-1,11,0.994,0.157,1
+all pairs,gut,"Same person, other site, same day",subject-2,12,0.996,0.268,1
+all pairs,left palm,"Same person, same site, different visit",pooled,12,0.776,0.414,0.854
+all pairs,left palm,"Same person, same site, different visit",subject-1,6,0.776,0.592,0.813
+all pairs,left palm,"Same person, same site, different visit",subject-2,6,0.777,0.414,0.854
+all pairs,left palm,"Same site, other person, same day",both,3,0.687,0.683,0.879
+all pairs,left palm,"Same person, other site, same day",pooled,23,0.899,0.155,1
+all pairs,left palm,"Same person, other site, same day",subject-1,11,0.899,0.326,0.996
+all pairs,left palm,"Same person, other site, same day",subject-2,12,0.859,0.155,1
+all pairs,right palm,"Same person, same site, different visit",pooled,16,0.874,0.516,1
+all pairs,right palm,"Same person, same site, different visit",subject-1,10,0.874,0.612,1
+all pairs,right palm,"Same person, same site, different visit",subject-2,6,0.882,0.516,0.998
+all pairs,right palm,"Same site, other person, same day",both,4,0.737,0.605,0.844
+all pairs,right palm,"Same person, other site, same day",pooled,25,0.894,0.157,1
+all pairs,right palm,"Same person, other site, same day",subject-1,13,0.894,0.157,1
+all pairs,right palm,"Same person, other site, same day",subject-2,12,0.855,0.268,0.999
+all pairs,tongue,"Same person, same site, different visit",pooled,16,0.376,0.214,0.504
+all pairs,tongue,"Same person, same site, different visit",subject-1,10,0.376,0.214,0.504
+all pairs,tongue,"Same person, same site, different visit",subject-2,6,0.381,0.247,0.47
+all pairs,tongue,"Same site, other person, same day",both,4,0.521,0.332,0.661
+all pairs,tongue,"Same person, other site, same day",pooled,25,0.951,0.155,1
+all pairs,tongue,"Same person, other site, same day",subject-1,13,0.952,0.871,1
+all pairs,tongue,"Same person, other site, same day",subject-2,12,0.907,0.155,0.999
+without flagged palm samples,gut,"Same person, same site, different visit",pooled,12,0.336,0.245,0.458
+without flagged palm samples,gut,"Same person, same site, different visit",subject-1,6,0.345,0.245,0.458
+without flagged palm samples,gut,"Same person, same site, different visit",subject-2,6,0.336,0.293,0.452
+without flagged palm samples,gut,"Same site, other person, same day",both,3,0.688,0.685,0.75
+without flagged palm samples,gut,"Same person, other site, same day",pooled,20,0.995,0.961,1
+without flagged palm samples,gut,"Same person, other site, same day",subject-1,10,0.994,0.984,1
+without flagged palm samples,gut,"Same person, other site, same day",subject-2,10,0.997,0.961,1
+without flagged palm samples,left palm,"Same person, same site, different visit",pooled,9,0.745,0.414,0.813
+without flagged palm samples,left palm,"Same person, same site, different visit",subject-1,6,0.776,0.592,0.813
+without flagged palm samples,left palm,"Same person, same site, different visit",subject-2,3,0.732,0.414,0.738
+without flagged palm samples,left palm,"Same site, other person, same day",both,3,0.687,0.683,0.879
+without flagged palm samples,left palm,"Same person, other site, same day",pooled,20,0.885,0.275,1
+without flagged palm samples,left palm,"Same person, other site, same day",subject-1,11,0.899,0.326,0.996
+without flagged palm samples,left palm,"Same person, other site, same day",subject-2,9,0.818,0.275,1
+without flagged palm samples,right palm,"Same person, same site, different visit",pooled,9,0.743,0.516,0.886
+without flagged palm samples,right palm,"Same person, same site, different visit",subject-1,6,0.775,0.612,0.886
+without flagged palm samples,right palm,"Same person, same site, different visit",subject-2,3,0.58,0.516,0.768
+without flagged palm samples,right palm,"Same site, other person, same day",both,3,0.736,0.605,0.844
+without flagged palm samples,right palm,"Same person, other site, same day",pooled,20,0.883,0.275,1
+without flagged palm samples,right palm,"Same person, other site, same day",subject-1,11,0.894,0.326,1
+without flagged palm samples,right palm,"Same person, other site, same day",subject-2,9,0.796,0.275,0.999
+without flagged palm samples,tongue,"Same person, same site, different visit",pooled,16,0.376,0.214,0.504
+without flagged palm samples,tongue,"Same person, same site, different visit",subject-1,10,0.376,0.214,0.504
+without flagged palm samples,tongue,"Same person, same site, different visit",subject-2,6,0.381,0.247,0.47
+without flagged palm samples,tongue,"Same site, other person, same day",both,4,0.521,0.332,0.661
+without flagged palm samples,tongue,"Same person, other site, same day",pooled,22,0.95,0.752,1
+without flagged palm samples,tongue,"Same person, other site, same day",subject-1,12,0.951,0.871,1
+without flagged palm samples,tongue,"Same person, other site, same day",subject-2,10,0.907,0.752,0.999
