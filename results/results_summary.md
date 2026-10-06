@@ -82,6 +82,32 @@ Source: `results/04_taxa_top_genera_by_site.csv`, `results/04_taxa_genus.png`, `
 - **Right palm's apparent top genus, *Bacteroides* (15% with all samples), is an artefact.** It comes from the two gut-like flagged samples (61–70% each); the right palm median is 0.8%. Source: `results/04_taxa_top_genera_by_site.csv`.
 - **Neisseria-like bacteria are abundant on both tongues.** They appear as unassigned Betaproteobacteria in subject-1 and unassigned Neisseriaceae in subject-2, probably the same organisms classified to different depths. Combined, they make up 15% of reads in subject-1 and 31% in subject-2. Source: `results/04_taxa_tongue_neisseria_like.csv`.
 
+## 4b. Gut vs tongue genera (`scripts/06_genus_gut_vs_tongue.R`, ALDEx2)
+
+Based on 8 paired visits from 2 people. "Relatively higher" means a larger share of the community, not a higher absolute amount.
+
+- **Gut and tongue share few genera.** Of 58 genera, 23 were found only in gut, 17 only in tongue (0 of 8 samples at the other site), and 18 at both. Source: `results/06_aldex_gut_vs_tongue.csv` (`pattern`).
+- **Site-exclusive genera are reported by detection, not effect size.** Source: `results/06_aldex_site_exclusive.png`.
+
+  | Only in gut | Only in tongue |
+  |---|---|
+  | *Faecalibacterium* (8/8, 7.4%) | unassigned Actinomycetales (8/8, 4.3%) |
+  | *Lachnospira* (8/8, 5.2%) | unassigned Bacillales (8/8, 1.6%) |
+  | unassigned Ruminococcaceae (8/8, 3.5%) | *Campylobacter* (8/8, 0.9%) |
+  | *Akkermansia* (6/8, 1.4%) | unassigned Gemellaceae (8/8, 0.8%) |
+  | *Oscillospira*, *Blautia*, *Desulfovibrio* (8/8, ≤1%) | *Leptotrichia* (8/8, 0.7%) |
+
+  Each entry gives the number of samples where the genus was detected and its mean share of reads. Absence from the shallow tongue samples (about 1,800–2,100 reads) is weaker evidence of true absence.
+- **Genera found at both sites with the largest, most consistent differences.** Source: `results/06_aldex_shared_genera.png`. Each was in the same direction at every informative visit (where it was detected) in both subjects, and with day 0 excluded:
+  - **Relatively higher in gut:** *Bacteroides* (paired effect −9.2, median difference −8.9 log2 CLR) and unassigned Clostridiales (−2.9).
+  - **Relatively higher in tongue:** Pasteurellaceae (Greengenes label *Gallibacterium*, likely *Haemophilus*; +3.1), unassigned Veillonellaceae (+2.5), *Streptococcus* (+2.4), *Prevotella* (+2.4) and unassigned Neisseriaceae (+1.3; 6 of 6 informative visits). The large spread in that last one reflects a subject-specific abundance on subject-2's tongue.
+- **These directions held when total microbial load was allowed to differ between sites** (shifts of −4 to +4 log2 units) and with `denom = "zero"`.
+  - **Exception:** unassigned Lachnospiraceae (−4.3 under the primary analysis) changes sign under large load shifts, so its direction depends on the CLR assumption.
+  - Shared genera with small effects (e.g. unassigned Bacteroidales, unassigned Bacteria) are not consistent across visits or load shifts.
+
+  Source: `results/06_aldex_gut_vs_tongue.csv` (`effect_shift_min`, `effect_shift_max`, `sign_stable`).
+- **ALDEx2 bug.** Its paired Wilcoxon test returned impossible p = 0 for 7 tongue-higher genera, so exact tests were computed separately. Every genus consistent across all visits sits at the smallest attainable adjusted p (about 0.02). P-values are in the CSV only; with 2 people they don't support population-level claims.
+
 ## 5. Temporal stability (`scripts/05_temporal_stability.R`)
 
 Median Bray-Curtis distance, without the 3 flagged palm samples:
