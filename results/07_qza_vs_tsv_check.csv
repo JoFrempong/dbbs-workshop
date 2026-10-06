@@ -1,0 +1,10 @@
+check,result
+ASVs (qza / tsv),770 / 770
+samples (qza / tsv),34 / 34
+same ASV IDs,TRUE
+same sample IDs,TRUE
+same ASV order,TRUE
+same sample order,TRUE
+total reads (qza / tsv),153807 / 153807
+cells that differ after aligning IDs,0
+max absolute difference,0
