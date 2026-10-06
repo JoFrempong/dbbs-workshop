@@ -16,6 +16,7 @@ results/     Everything the scripts produce: tables, figures, reports
 - Prefer tidyverse (`readr`, `dplyr`, `ggplot2`) for data handling and plots.
 - Use Bioconductor packages for the analysis methods: `DESeq2` (or `edgeR`) for RNA-seq; `vegan` and/or `phyloseq` for 16S diversity.
 - Load packages at the top of each script. If one is missing, say so and give the install command instead of installing it silently.
+- On this laptop (no admin rights), R 4.4 is installed with micromamba in `~/micromamba/envs/r` and is on the PATH via `~/.zshrc`. If `Rscript` isn't found, use `~/micromamba/envs/r/bin/Rscript`. Install missing packages with `MAMBA_ROOT_PREFIX=~/micromamba ~/micromamba-bin/bin/micromamba install -n r -c conda-forge -c bioconda <package>` (R packages are named `r-<name>`, Bioconductor ones `bioconductor-<name>`).
 
 ## Data rules
 
