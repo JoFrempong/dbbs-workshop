@@ -261,6 +261,7 @@ print(alpha_pairwise |> filter(metric == "Shannon"), n = Inf, width = Inf)
 
 # ---- Sensitivity: higher rarefaction depth ----
 dropped <- names(depth)[depth < sensitivity_depth]
+set.seed(42)  # own seed, so results don't depend on code run before this step
 alpha_sens <- rarefy_alpha(comm, sensitivity_depth, n_rarefy) |>
   left_join(meta, by = "sample_id") |>
   select(sample_id, body_site, subject, Shannon = shannon_mean,
