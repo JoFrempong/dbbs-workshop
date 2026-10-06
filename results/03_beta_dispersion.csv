@@ -1,0 +1,37 @@
+sample_set,distance,body_site,mean_distance_to_centroid,dispersion_F,dispersion_p
+all samples,bray,gut,0.402,8.75,1e-4
+all samples,bray,left palm,0.501,8.75,1e-4
+all samples,bray,right palm,0.547,8.75,1e-4
+all samples,bray,tongue,0.315,8.75,1e-4
+all samples,jaccard,gut,0.474,24.07,1e-4
+all samples,jaccard,left palm,0.55,24.07,1e-4
+all samples,jaccard,right palm,0.593,24.07,1e-4
+all samples,jaccard,tongue,0.354,24.07,1e-4
+all samples,bray_relabund,gut,0.395,8.58,1e-4
+all samples,bray_relabund,left palm,0.497,8.58,1e-4
+all samples,bray_relabund,right palm,0.545,8.58,1e-4
+all samples,bray_relabund,tongue,0.311,8.58,1e-4
+without 3 flagged palms,bray,gut,0.402,5.95,0.001
+without 3 flagged palms,bray,left palm,0.471,5.95,0.001
+without 3 flagged palms,bray,right palm,0.467,5.95,0.001
+without 3 flagged palms,bray,tongue,0.315,5.95,0.001
+without 3 flagged palms,jaccard,gut,0.474,20.97,1e-4
+without 3 flagged palms,jaccard,left palm,0.527,20.97,1e-4
+without 3 flagged palms,jaccard,right palm,0.545,20.97,1e-4
+without 3 flagged palms,jaccard,tongue,0.354,20.97,1e-4
+without 3 flagged palms,bray_relabund,gut,0.395,5.72,0.0016
+without 3 flagged palms,bray_relabund,left palm,0.466,5.72,0.0016
+without 3 flagged palms,bray_relabund,right palm,0.463,5.72,0.0016
+without 3 flagged palms,bray_relabund,tongue,0.311,5.72,0.0016
+without day 0 (post hoc),bray,gut,0.384,3.95,0.0116
+without day 0 (post hoc),bray,left palm,0.471,3.95,0.0116
+without day 0 (post hoc),bray,right palm,0.467,3.95,0.0116
+without day 0 (post hoc),bray,tongue,0.326,3.95,0.0116
+without day 0 (post hoc),jaccard,gut,0.432,21.41,1e-4
+without day 0 (post hoc),jaccard,left palm,0.527,21.41,1e-4
+without day 0 (post hoc),jaccard,right palm,0.545,21.41,1e-4
+without day 0 (post hoc),jaccard,tongue,0.349,21.41,1e-4
+without day 0 (post hoc),bray_relabund,gut,0.376,3.89,0.0122
+without day 0 (post hoc),bray_relabund,left palm,0.466,3.89,0.0122
+without day 0 (post hoc),bray_relabund,right palm,0.463,3.89,0.0122
+without day 0 (post hoc),bray_relabund,tongue,0.322,3.89,0.0122

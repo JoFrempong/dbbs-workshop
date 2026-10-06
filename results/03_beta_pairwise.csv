@@ -1,0 +1,55 @@
+sample_set,distance,site_1,site_2,n,R2,F,p_value,min_possible_p,p_adj_BH
+all samples,bray,gut,left palm,16,0.397,10.66,0.0078125,0.0078,0.0094
+all samples,bray,gut,right palm,17,0.28,6.73,0.00390625,0.0039,0.0059
+all samples,bray,gut,tongue,17,0.579,27.53,0.00390625,0.0039,0.0059
+all samples,bray,left palm,right palm,17,0.036,0.58,0.3828125,0.0039,0.3828
+all samples,bray,left palm,tongue,17,0.333,8.24,0.00390625,0.0039,0.0059
+all samples,bray,right palm,tongue,18,0.332,8.26,0.00390625,0.0039,0.0059
+all samples,jaccard,gut,left palm,16,0.287,6.05,0.0078125,0.0078,0.0094
+all samples,jaccard,gut,right palm,17,0.211,4.29,0.00390625,0.0039,0.0059
+all samples,jaccard,gut,tongue,17,0.468,14.9,0.00390625,0.0039,0.0059
+all samples,jaccard,left palm,right palm,17,0.048,0.77,0.46875,0.0039,0.4688
+all samples,jaccard,left palm,tongue,17,0.3,6.74,0.00390625,0.0039,0.0059
+all samples,jaccard,right palm,tongue,18,0.282,6.48,0.00390625,0.0039,0.0059
+all samples,bray_relabund,gut,left palm,16,0.405,11.1,0.0078125,0.0078,0.0094
+all samples,bray_relabund,gut,right palm,17,0.285,6.94,0.00390625,0.0039,0.0059
+all samples,bray_relabund,gut,tongue,17,0.588,28.87,0.00390625,0.0039,0.0059
+all samples,bray_relabund,left palm,right palm,17,0.035,0.57,0.37890625,0.0039,0.3789
+all samples,bray_relabund,left palm,tongue,17,0.339,8.49,0.00390625,0.0039,0.0059
+all samples,bray_relabund,right palm,tongue,18,0.335,8.4,0.00390625,0.0039,0.0059
+without 3 flagged palms,bray,gut,left palm,15,0.428,11.68,0.015625,0.0156,0.0187
+without 3 flagged palms,bray,gut,right palm,15,0.437,11.86,0.015625,0.0156,0.0187
+without 3 flagged palms,bray,gut,tongue,17,0.579,27.53,0.00390625,0.0039,0.0156
+without 3 flagged palms,bray,left palm,right palm,14,0.023,0.31,0.671875,0.0156,0.6719
+without 3 flagged palms,bray,left palm,tongue,16,0.415,11.13,0.0078125,0.0078,0.0156
+without 3 flagged palms,bray,right palm,tongue,16,0.417,10.98,0.0078125,0.0078,0.0156
+without 3 flagged palms,jaccard,gut,left palm,15,0.307,6.24,0.015625,0.0156,0.0187
+without 3 flagged palms,jaccard,gut,right palm,15,0.3,6.01,0.015625,0.0156,0.0187
+without 3 flagged palms,jaccard,gut,tongue,17,0.468,14.9,0.00390625,0.0039,0.0156
+without 3 flagged palms,jaccard,left palm,right palm,14,0.052,0.69,0.71875,0.0156,0.7188
+without 3 flagged palms,jaccard,left palm,tongue,16,0.362,8.39,0.0078125,0.0078,0.0156
+without 3 flagged palms,jaccard,right palm,tongue,16,0.336,7.52,0.0078125,0.0078,0.0156
+without 3 flagged palms,bray_relabund,gut,left palm,15,0.438,12.23,0.015625,0.0156,0.0187
+without 3 flagged palms,bray_relabund,gut,right palm,15,0.445,12.31,0.015625,0.0156,0.0187
+without 3 flagged palms,bray_relabund,gut,tongue,17,0.588,28.87,0.00390625,0.0039,0.0156
+without 3 flagged palms,bray_relabund,left palm,right palm,14,0.022,0.3,0.59375,0.0156,0.5938
+without 3 flagged palms,bray_relabund,left palm,tongue,16,0.423,11.53,0.0078125,0.0078,0.0156
+without 3 flagged palms,bray_relabund,right palm,tongue,16,0.422,11.28,0.0078125,0.0078,0.0156
+without day 0 (post hoc),bray,gut,left palm,13,0.436,9.82,0.015625,0.0156,0.0187
+without day 0 (post hoc),bray,gut,right palm,13,0.446,9.95,0.015625,0.0156,0.0187
+without day 0 (post hoc),bray,gut,tongue,13,0.586,21.26,0.015625,0.0156,0.0187
+without day 0 (post hoc),bray,left palm,right palm,14,0.023,0.31,0.671875,0.0156,0.6719
+without day 0 (post hoc),bray,left palm,tongue,14,0.401,8.95,0.015625,0.0156,0.0187
+without day 0 (post hoc),bray,right palm,tongue,14,0.402,8.78,0.015625,0.0156,0.0187
+without day 0 (post hoc),jaccard,gut,left palm,13,0.338,6.16,0.015625,0.0156,0.0187
+without day 0 (post hoc),jaccard,gut,right palm,13,0.33,5.89,0.015625,0.0156,0.0187
+without day 0 (post hoc),jaccard,gut,tongue,13,0.517,14.13,0.015625,0.0156,0.0187
+without day 0 (post hoc),jaccard,left palm,right palm,14,0.052,0.69,0.71875,0.0156,0.7188
+without day 0 (post hoc),jaccard,left palm,tongue,14,0.357,7.07,0.015625,0.0156,0.0187
+without day 0 (post hoc),jaccard,right palm,tongue,14,0.33,6.34,0.015625,0.0156,0.0187
+without day 0 (post hoc),bray_relabund,gut,left palm,13,0.447,10.33,0.015625,0.0156,0.0187
+without day 0 (post hoc),bray_relabund,gut,right palm,13,0.455,10.36,0.015625,0.0156,0.0187
+without day 0 (post hoc),bray_relabund,gut,tongue,13,0.597,22.52,0.015625,0.0156,0.0187
+without day 0 (post hoc),bray_relabund,left palm,right palm,14,0.022,0.3,0.59375,0.0156,0.5938
+without day 0 (post hoc),bray_relabund,left palm,tongue,14,0.409,9.26,0.015625,0.0156,0.0187
+without day 0 (post hoc),bray_relabund,right palm,tongue,14,0.407,9.01,0.015625,0.0156,0.0187

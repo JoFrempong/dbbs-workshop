@@ -1,0 +1,10 @@
+sample_id,body_site,subject,days_since_experiment_start,rank,neighbour,bray_curtis_relabund,neighbour_site,neighbour_subject,neighbour_day
+L3S242,right palm,subject-1,0,1,L1S8,0.149,gut,subject-1,0
+L3S242,right palm,subject-1,0,2,L1S76,0.374,gut,subject-1,112
+L3S242,right palm,subject-1,0,3,L1S57,0.406,gut,subject-1,84
+L3S378,right palm,subject-2,0,1,L1S140,0.248,gut,subject-2,0
+L3S378,right palm,subject-2,0,2,L1S208,0.388,gut,subject-2,84
+L3S378,right palm,subject-2,0,3,L1S281,0.455,gut,subject-2,168
+L2S240,left palm,subject-2,0,1,L5S240,0.135,tongue,subject-2,0
+L2S240,left palm,subject-2,0,2,L6S68,0.211,tongue,subject-2,140
+L2S240,left palm,subject-2,0,3,L6S20,0.34,tongue,subject-2,84

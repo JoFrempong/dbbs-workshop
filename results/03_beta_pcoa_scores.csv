@@ -1,0 +1,103 @@
+sample_id,PCo1,PCo2,distance,body_site,subject,days_since_experiment_start,id_prefix
+L1S105,-0.5279,-0.0847,bray,gut,subject-1,140,L1
+L1S140,-0.5285,-0.0908,bray,gut,subject-2,0,L1
+L1S208,-0.5151,-0.0905,bray,gut,subject-2,84,L1
+L1S257,-0.491,-0.0828,bray,gut,subject-2,140,L1
+L1S281,-0.488,-0.0824,bray,gut,subject-2,168,L1
+L1S57,-0.5142,-0.0852,bray,gut,subject-1,84,L1
+L1S76,-0.5233,-0.0869,bray,gut,subject-1,112,L1
+L1S8,-0.4895,-0.0835,bray,gut,subject-1,0,L1
+L2S155,0.1368,0.3372,bray,left palm,subject-1,84,L2
+L2S175,0.2016,0.3294,bray,left palm,subject-1,112,L2
+L2S204,0.0538,0.3294,bray,left palm,subject-1,140,L2
+L2S222,0.0474,0.2897,bray,left palm,subject-1,168,L2
+L2S240,0.3317,-0.366,bray,left palm,subject-2,0,L2
+L2S309,0.1622,0.3536,bray,left palm,subject-2,84,L2
+L2S357,0.2119,0.3551,bray,left palm,subject-2,140,L2
+L2S382,0.1553,0.1611,bray,left palm,subject-2,168,L2
+L3S242,-0.468,-0.0825,bray,right palm,subject-1,0,L3
+L3S294,0.0948,0.3397,bray,right palm,subject-1,84,L3
+L3S313,0.1914,0.3341,bray,right palm,subject-1,112,L3
+L3S341,0.1244,0.317,bray,right palm,subject-1,140,L3
+L3S360,0.0472,0.2852,bray,right palm,subject-1,168,L3
+L3S378,-0.5026,-0.0903,bray,right palm,subject-2,0,L3
+L4S112,0.2206,0.3354,bray,right palm,subject-2,140,L4
+L4S137,0.2137,0.1748,bray,right palm,subject-2,168,L4
+L4S63,0.1476,0.3762,bray,right palm,subject-2,84,L4
+L5S104,0.3201,-0.3404,bray,tongue,subject-1,0,L5
+L5S155,0.2894,-0.3442,bray,tongue,subject-1,84,L5
+L5S174,0.2676,-0.3427,bray,tongue,subject-1,112,L5
+L5S203,0.3254,-0.3382,bray,tongue,subject-1,140,L5
+L5S222,0.2954,-0.38,bray,tongue,subject-1,168,L5
+L5S240,0.3231,-0.374,bray,tongue,subject-2,0,L5
+L6S20,0.2709,-0.3523,bray,tongue,subject-2,84,L6
+L6S68,0.3224,-0.3331,bray,tongue,subject-2,140,L6
+L6S93,0.2933,-0.287,bray,tongue,subject-2,168,L6
+L1S105,-0.3948,-0.1969,jaccard,gut,subject-1,140,L1
+L1S140,-0.3903,-0.2134,jaccard,gut,subject-2,0,L1
+L1S208,-0.404,-0.2489,jaccard,gut,subject-2,84,L1
+L1S257,-0.4178,-0.2398,jaccard,gut,subject-2,140,L1
+L1S281,-0.4234,-0.2486,jaccard,gut,subject-2,168,L1
+L1S57,-0.3998,-0.2167,jaccard,gut,subject-1,84,L1
+L1S76,-0.4307,-0.2366,jaccard,gut,subject-1,112,L1
+L1S8,-0.3219,-0.1879,jaccard,gut,subject-1,0,L1
+L2S155,-0.0096,0.3498,jaccard,left palm,subject-1,84,L2
+L2S175,0.0386,0.3372,jaccard,left palm,subject-1,112,L2
+L2S204,-0.0729,0.3683,jaccard,left palm,subject-1,140,L2
+L2S222,-0.0775,0.3413,jaccard,left palm,subject-1,168,L2
+L2S240,0.356,-0.1691,jaccard,left palm,subject-2,0,L2
+L2S309,-0.0426,0.2812,jaccard,left palm,subject-2,84,L2
+L2S357,0.0223,0.3098,jaccard,left palm,subject-2,140,L2
+L2S382,0.0392,0.1878,jaccard,left palm,subject-2,168,L2
+L3S242,-0.2469,-0.163,jaccard,right palm,subject-1,0,L3
+L3S294,-0.0058,0.2927,jaccard,right palm,subject-1,84,L3
+L3S313,0.0495,0.2884,jaccard,right palm,subject-1,112,L3
+L3S341,-0.0365,0.3244,jaccard,right palm,subject-1,140,L3
+L3S360,-0.0788,0.2614,jaccard,right palm,subject-1,168,L3
+L3S378,-0.3331,-0.2084,jaccard,right palm,subject-2,0,L3
+L4S112,0.0279,0.3334,jaccard,right palm,subject-2,140,L4
+L4S137,0.0861,0.2199,jaccard,right palm,subject-2,168,L4
+L4S63,-0.007,0.3168,jaccard,right palm,subject-2,84,L4
+L5S104,0.3711,-0.2094,jaccard,tongue,subject-1,0,L5
+L5S155,0.3607,-0.2424,jaccard,tongue,subject-1,84,L5
+L5S174,0.3961,-0.241,jaccard,tongue,subject-1,112,L5
+L5S203,0.3858,-0.1824,jaccard,tongue,subject-1,140,L5
+L5S222,0.4306,-0.2326,jaccard,tongue,subject-1,168,L5
+L5S240,0.403,-0.2387,jaccard,tongue,subject-2,0,L5
+L6S20,0.3958,-0.2263,jaccard,tongue,subject-2,84,L6
+L6S68,0.3725,-0.1671,jaccard,tongue,subject-2,140,L6
+L6S93,0.358,-0.143,jaccard,tongue,subject-2,168,L6
+L1S105,-0.5315,0.0814,bray_relabund,gut,subject-1,140,L1
+L1S140,-0.5318,0.088,bray_relabund,gut,subject-2,0,L1
+L1S208,-0.5197,0.0883,bray_relabund,gut,subject-2,84,L1
+L1S257,-0.497,0.0813,bray_relabund,gut,subject-2,140,L1
+L1S281,-0.4935,0.0807,bray_relabund,gut,subject-2,168,L1
+L1S57,-0.5178,0.0826,bray_relabund,gut,subject-1,84,L1
+L1S76,-0.5289,0.0848,bray_relabund,gut,subject-1,112,L1
+L1S8,-0.4902,0.0801,bray_relabund,gut,subject-1,0,L1
+L2S155,0.1416,-0.3397,bray_relabund,left palm,subject-1,84,L2
+L2S175,0.2073,-0.3305,bray_relabund,left palm,subject-1,112,L2
+L2S204,0.0583,-0.3319,bray_relabund,left palm,subject-1,140,L2
+L2S222,0.0511,-0.2952,bray_relabund,left palm,subject-1,168,L2
+L2S240,0.3304,0.3703,bray_relabund,left palm,subject-2,0,L2
+L2S309,0.1646,-0.3525,bray_relabund,left palm,subject-2,84,L2
+L2S357,0.2151,-0.3542,bray_relabund,left palm,subject-2,140,L2
+L2S382,0.1579,-0.1624,bray_relabund,left palm,subject-2,168,L2
+L3S242,-0.4674,0.079,bray_relabund,right palm,subject-1,0,L3
+L3S294,0.0972,-0.3382,bray_relabund,right palm,subject-1,84,L3
+L3S313,0.1936,-0.3325,bray_relabund,right palm,subject-1,112,L3
+L3S341,0.1264,-0.3143,bray_relabund,right palm,subject-1,140,L3
+L3S360,0.0487,-0.2836,bray_relabund,right palm,subject-1,168,L3
+L3S378,-0.5038,0.0875,bray_relabund,right palm,subject-2,0,L3
+L4S112,0.2253,-0.3365,bray_relabund,right palm,subject-2,140,L4
+L4S137,0.2184,-0.1769,bray_relabund,right palm,subject-2,168,L4
+L4S63,0.1517,-0.3799,bray_relabund,right palm,subject-2,84,L4
+L5S104,0.3182,0.3446,bray_relabund,tongue,subject-1,0,L5
+L5S155,0.2863,0.3473,bray_relabund,tongue,subject-1,84,L5
+L5S174,0.2665,0.3464,bray_relabund,tongue,subject-1,112,L5
+L5S203,0.324,0.3409,bray_relabund,tongue,subject-1,140,L5
+L5S222,0.2937,0.3831,bray_relabund,tongue,subject-1,168,L5
+L5S240,0.3206,0.3787,bray_relabund,tongue,subject-2,0,L5
+L6S20,0.2703,0.3554,bray_relabund,tongue,subject-2,84,L6
+L6S68,0.3211,0.3362,bray_relabund,tongue,subject-2,140,L6
+L6S93,0.2934,0.2918,bray_relabund,tongue,subject-2,168,L6
