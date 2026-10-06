@@ -130,6 +130,19 @@ Source: `results/05_temporal_summary.csv`, `results/05_temporal_stability.png`.
 - **The largest changes between consecutive visits were palm day 0 → day 84** (0.85–1.00). All of these involve the flagged day-0 samples. Source: `results/05_temporal_distances.csv`, `results/05_temporal_series.png`.
 - **The one usable pair that crosses the possible batch shows no extra change.** Subject-2's tongue from day 0 to day 84 (L5 → L6) changed by 0.35, compared with 0.36 for subject-1's tongue over the same visits (L5 → L5). This argues against a large batch effect at tongue but cannot exclude one. Source: `results/05_temporal_distances.csv`.
 
+## 6. Antibiotic use (checked, not testable)
+
+- **Antibiotic use is completely tied to the first visit.** All 7 day-0 samples (both subjects, 28 October 2008) report antibiotics, and none of the 27 later samples do. Source: `data/raw/moving-pictures-16s/samples.tsv`, `results/01_qc_design.csv`.
+- **The day-0 samples also differ in other ways:**
+  - first visit
+  - season: October, vs January–April for later visits
+  - an 84-day gap to the next visit
+  - lower sequencing depth: median 1,911 reads, vs 4,082 later (`results/01_qc_depth.csv`)
+  - for subject-2's right palm and tongue, a different sample-ID prefix from their later samples
+  - three palm samples that likely reflect cross-contamination or mislabelling (`results/03_beta_day0_palm_neighbours.csv`)
+- **No test was run.** Any antibiotic comparison would be identical to a day-0-vs-later comparison. Day-0 differences, such as the lowest Shannon diversity in 5 of 7 site × subject series (`results/02_alpha_diversity.csv`), cannot be attributed to antibiotics.
+- **What testing it would need:** samples before and after antibiotic use in the same people, exposure at a time point other than the first visit, antibiotic type and timing, and more than two people.
+
 ## Limitations
 
 - **Only two people.** Differences between subjects, and whether communities are person-specific, cannot be tested or generalised.
