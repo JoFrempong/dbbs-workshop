@@ -1,0 +1,81 @@
+sample_set,body_site,rank,genus_or_deepest_rank,balanced_mean_pct,s1_mean_pct,s2_mean_pct,median_pct,mean_pct,n_s1,n_s2,expected_prevalence_pct
+all samples,gut,1,Bacteroides,56.2,59.1,53.4,57,56.2,4,4,100
+all samples,gut,2,Unassigned (f. Lachnospiraceae),10.6,7.9,13.4,9.2,10.6,4,4,100
+all samples,gut,3,Faecalibacterium,7.4,8.3,6.5,8,7.4,4,4,100
+all samples,gut,4,Lachnospira,5.2,5.9,4.5,5.2,5.2,4,4,97.5
+all samples,gut,5,Unassigned (o. Bacteroidales),3.8,1.7,5.9,3.2,3.8,4,4,100
+all samples,gut,6,Unassigned (f. Ruminococcaceae),3.5,1.1,5.9,3,3.5,4,4,99.4
+all samples,gut,7,Unassigned (k. Bacteria),3.3,4.4,2.2,1.9,3.3,4,4,100
+all samples,gut,8,Unassigned (o. Clostridiales),2,2.2,1.8,1.6,2,4,4,100
+all samples,gut,9,Akkermansia,1.4,2.8,0,0.1,1.4,4,4,55.4
+all samples,gut,10,Oscillospira,1,0.7,1.2,0.7,1,4,4,99.3
+all samples,left palm,1,Streptococcus,13.1,9.9,16.3,14.4,13.1,4,4,100
+all samples,left palm,2,Corynebacterium,13.1,17.7,8.4,9.1,13.1,4,4,99.9
+all samples,left palm,3,Unassigned (c. Gammaproteobacteria),10.2,16.3,4.1,3,10.2,4,4,89.9
+all samples,left palm,4,Unassigned (k. Bacteria),7,5.5,8.6,5.8,7,4,4,100
+all samples,left palm,5,Bacillus,6.3,3.4,9.1,3.2,6.3,4,4,87.5
+all samples,left palm,6,Unassigned (f. Neisseriaceae),5.3,2.1,8.5,3.5,5.3,4,4,100
+all samples,left palm,7,Pasteurellaceae (GG: Gallibacterium),3.8,0.5,7.2,1.4,3.8,4,4,75
+all samples,left palm,8,Acinetobacter,3.2,6.2,0.1,0.6,3.2,4,4,69.8
+all samples,left palm,9,Anaerococcus,2.4,2.5,2.4,2.4,2.4,4,4,96.4
+all samples,left palm,10,Prevotella,2.3,1,3.6,0.7,2.3,4,4,86.8
+all samples,right palm,1,Bacteroides,15.1,14.6,15.6,0.8,15,5,4,83.2
+all samples,right palm,2,Corynebacterium,12.2,15.9,8.6,9.7,12.6,5,4,77.8
+all samples,right palm,3,Streptococcus,9.4,7.1,11.6,5.9,9.1,5,4,99.6
+all samples,right palm,4,Bacillus,7.7,5.8,9.6,6.4,7.5,5,4,77.8
+all samples,right palm,5,Unassigned (c. Gammaproteobacteria),7.2,11.2,3.2,2.6,7.6,5,4,77.8
+all samples,right palm,6,Unassigned (k. Bacteria),4.9,4,5.8,3,4.8,5,4,100
+all samples,right palm,7,Acinetobacter,3.1,5.9,0.3,0.7,3.4,5,4,72.6
+all samples,right palm,8,Anaerococcus,2.4,2.4,2.5,1.5,2.4,5,4,77.8
+all samples,right palm,9,Unassigned (f. Neisseriaceae),2.4,1.7,3.1,2,2.3,5,4,77.8
+all samples,right palm,10,Faecalibacterium,2.3,0.8,3.8,0.5,2.1,5,4,66.6
+all samples,tongue,1,Pasteurellaceae (GG: Gallibacterium),18.6,19.4,17.9,16.2,18.7,5,4,100
+all samples,tongue,2,Unassigned (f. Neisseriaceae),14.9,0.5,29.4,1.4,13.3,5,4,66.7
+all samples,tongue,3,Streptococcus,14.2,18.6,9.9,12.3,14.7,5,4,100
+all samples,tongue,4,Prevotella,12.1,15.6,8.5,7.4,12.5,5,4,100
+all samples,tongue,5,Unassigned (k. Bacteria),10.1,9.6,10.7,9.5,10.1,5,4,100
+all samples,tongue,6,Unassigned (c. Betaproteobacteria),8.1,14.5,1.7,4,8.8,5,4,66.7
+all samples,tongue,7,Unassigned (f. Veillonellaceae),6.8,8,5.6,5.8,6.9,5,4,100
+all samples,tongue,8,Unassigned (o. Actinomycetales),4,4.6,3.4,3.6,4.1,5,4,99.9
+all samples,tongue,9,Unassigned (o. Bacteroidales),3,1.7,4.3,1.7,2.9,5,4,99.8
+all samples,tongue,10,Unassigned (f. Lachnospiraceae),1.6,1.3,1.9,1.5,1.6,5,4,100
+without 3 flagged palms,gut,1,Bacteroides,56.2,59.1,53.4,57,56.2,4,4,100
+without 3 flagged palms,gut,2,Unassigned (f. Lachnospiraceae),10.6,7.9,13.4,9.2,10.6,4,4,100
+without 3 flagged palms,gut,3,Faecalibacterium,7.4,8.3,6.5,8,7.4,4,4,100
+without 3 flagged palms,gut,4,Lachnospira,5.2,5.9,4.5,5.2,5.2,4,4,97.5
+without 3 flagged palms,gut,5,Unassigned (o. Bacteroidales),3.8,1.7,5.9,3.2,3.8,4,4,100
+without 3 flagged palms,gut,6,Unassigned (f. Ruminococcaceae),3.5,1.1,5.9,3,3.5,4,4,99.4
+without 3 flagged palms,gut,7,Unassigned (k. Bacteria),3.3,4.4,2.2,1.9,3.3,4,4,100
+without 3 flagged palms,gut,8,Unassigned (o. Clostridiales),2,2.2,1.8,1.6,2,4,4,100
+without 3 flagged palms,gut,9,Akkermansia,1.4,2.8,0,0.1,1.4,4,4,55.4
+without 3 flagged palms,gut,10,Oscillospira,1,0.7,1.2,0.7,1,4,4,99.3
+without 3 flagged palms,left palm,1,Corynebacterium,14.4,17.7,11.1,11.2,14.8,4,3,100
+without 3 flagged palms,left palm,2,Streptococcus,13.7,9.9,17.4,15.8,13.1,4,3,100
+without 3 flagged palms,left palm,3,Unassigned (c. Gammaproteobacteria),10.9,16.3,5.5,3.1,11.7,4,3,95.4
+without 3 flagged palms,left palm,4,Bacillus,7.8,3.4,12.2,3.2,7.2,4,3,100
+without 3 flagged palms,left palm,5,Unassigned (k. Bacteria),6.3,5.5,7.2,5.4,6.2,4,3,100
+without 3 flagged palms,left palm,6,Unassigned (f. Neisseriaceae),3.4,2.1,4.7,3.5,3.2,4,3,100
+without 3 flagged palms,left palm,7,Acinetobacter,3.1,6.2,0,0.7,3.6,4,3,65.7
+without 3 flagged palms,left palm,8,Anaerococcus,2.8,2.5,3.1,3.4,2.8,4,3,100
+without 3 flagged palms,left palm,9,Aggregatibacter,2.1,1.8,2.5,1.5,2.1,4,3,98.8
+without 3 flagged palms,left palm,10,Prevotella,2.1,1,3.3,0.6,1.9,4,3,84.9
+without 3 flagged palms,right palm,1,Corynebacterium,15.6,19.8,11.4,12.1,16.2,4,3,100
+without 3 flagged palms,right palm,2,Streptococcus,12.1,8.8,15.4,7.7,11.6,4,3,100
+without 3 flagged palms,right palm,3,Bacillus,10,7.3,12.8,6.7,9.7,4,3,100
+without 3 flagged palms,right palm,4,Unassigned (c. Gammaproteobacteria),9.1,14,4.2,3.1,9.8,4,3,100
+without 3 flagged palms,right palm,5,Unassigned (k. Bacteria),5,3.2,6.8,3,4.8,4,3,100
+without 3 flagged palms,right palm,6,Acinetobacter,3.9,7.4,0.4,1.1,4.4,4,3,93.3
+without 3 flagged palms,right palm,7,Anaerococcus,3.2,3,3.3,3.8,3.1,4,3,100
+without 3 flagged palms,right palm,8,Unassigned (f. Neisseriaceae),3.1,2.1,4.1,2.1,3,4,3,100
+without 3 flagged palms,right palm,9,Unassigned (f. Comamonadaceae),2.6,1.2,4,0.5,2.4,4,3,70
+without 3 flagged palms,right palm,10,Aggregatibacter,2.5,2.4,2.6,2.9,2.5,4,3,85.7
+without 3 flagged palms,tongue,1,Pasteurellaceae (GG: Gallibacterium),18.6,19.4,17.9,16.2,18.7,5,4,100
+without 3 flagged palms,tongue,2,Unassigned (f. Neisseriaceae),14.9,0.5,29.4,1.4,13.3,5,4,66.7
+without 3 flagged palms,tongue,3,Streptococcus,14.2,18.6,9.9,12.3,14.7,5,4,100
+without 3 flagged palms,tongue,4,Prevotella,12.1,15.6,8.5,7.4,12.5,5,4,100
+without 3 flagged palms,tongue,5,Unassigned (k. Bacteria),10.1,9.6,10.7,9.5,10.1,5,4,100
+without 3 flagged palms,tongue,6,Unassigned (c. Betaproteobacteria),8.1,14.5,1.7,4,8.8,5,4,66.7
+without 3 flagged palms,tongue,7,Unassigned (f. Veillonellaceae),6.8,8,5.6,5.8,6.9,5,4,100
+without 3 flagged palms,tongue,8,Unassigned (o. Actinomycetales),4,4.6,3.4,3.6,4.1,5,4,99.9
+without 3 flagged palms,tongue,9,Unassigned (o. Bacteroidales),3,1.7,4.3,1.7,2.9,5,4,99.8
+without 3 flagged palms,tongue,10,Unassigned (f. Lachnospiraceae),1.6,1.3,1.9,1.5,1.6,5,4,100
